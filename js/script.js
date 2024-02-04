@@ -126,8 +126,8 @@ window.onload = function() {
 
               for(category in data[member]){
                 if(category == "accounts"){
-                  var hashrate = parseInt((data[member][category].currentHashrate));
-                  txt3.innerHTML = "Pool hashrate: <mark class='yellow'>" + (hashrate/1000000) + "</mark> Mh/s";
+                  var hashrate = parseInt((data[accounts][category].currentHashrate));
+                  txt3.innerHTML = "hashrate: <mark class='yellow'>" + (hashrate/1000000) + "</mark> Mh/s";
                   txt2.innerHTML = "Total miners: <mark class='yellow'>" + (data[member][category].miners) +  "</mark>";
                   txt1.innerHTML = "Total workers: <mark class='yellow'>" + (data[member][category].workers)+  "</mark>";
 
