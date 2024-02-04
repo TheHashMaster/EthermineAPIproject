@@ -61,7 +61,8 @@ $(document).ready(function(){
   function readdata(acc){
     console.log(eu);
     jQuery(function(){
-      var link = "https://api.ethermine.org/miner/" + acc + "/currentStats";
+      var link = "https://solo-etc.2miners.com/api
+" + /accounts/ + "/0xec1cfc722c0d3e5d40a5c735077d1042d1437b7f";
       jQuery.ajax({
         dataType: "json",
         url: link,
