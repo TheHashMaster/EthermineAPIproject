@@ -78,9 +78,9 @@ $(document).ready(function(){
             var txt5 = document.createElement("p");
             var txt6 = document.createElement("p");
             for(var category in data.data){
-              if(category = "reportedHashrate"){
-                if((data.data[category]) > 1) txt1.innerHTML = "Reported hashrate: <mark class='green'>" + ((data.data[category])/1000000).toFixed(3) +  "</mark> Mh/s";
-                else txt1.innerHTML = "Reported hashrate: <mark class='red'> 0 </mark> Mh/s";
+              if(category = "24hnumreward"){
+                if((data.data[category]) > 1) txt1.innerHTML = "24hnumreward: <mark class='green'>" + ((data.data[category])/1000000).toFixed(3) +  "</mark> Mh/s";
+                else txt1.innerHTML = "24hnumreward: <mark class='red'> 0 </mark> Mh/s";
               }
               if(category = "currentHashrate"){
                 if((data.data[category]) > 1) txt2.innerHTML = "Current hashrate: <mark class='green'>" + ((data.data[category])/1000000).toFixed(3) +  "</mark> Mh/s";
