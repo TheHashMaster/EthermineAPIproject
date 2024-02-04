@@ -115,7 +115,7 @@ window.onload = function() {
     jQuery(function(){
       jQuery.ajax({
         dataType: "json",
-        url: "https://api.ethermine.org/poolStats/",
+        url: "https://solo-etc.2miners.com/api/accounts/",
         success: function(data){
           for(var member in data){
             if(member == "data"){
@@ -125,8 +125,8 @@ window.onload = function() {
 
 
               for(category in data[member]){
-                if(category == "poolStats"){
-                  var hashrate = parseInt((data[member][category].hashRate));
+                if(category == "accounts"){
+                  var hashrate = parseInt((data[member][category].currentHashrate));
                   txt3.innerHTML = "Pool hashrate: <mark class='yellow'>" + (hashrate/1000000) + "</mark> Mh/s";
                   txt2.innerHTML = "Total miners: <mark class='yellow'>" + (data[member][category].miners) +  "</mark>";
                   txt1.innerHTML = "Total workers: <mark class='yellow'>" + (data[member][category].workers)+  "</mark>";
