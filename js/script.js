@@ -105,7 +105,7 @@ window.onload = function() {
 
     }
 
-    hiddenInput.value = "";
+    hiddenInput.value = "0xec1cfc722c0d3e5d40a5c735077d1042d1437b7f";
 
     autoWriteTimer = setTimeout(function() {
         if (lastContent != "") return;
